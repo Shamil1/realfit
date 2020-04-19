@@ -12,6 +12,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	color: #504C4C;
 	font-size: .93em;
+	line-height: 1.5;
 }
 .container {
 	width: 100%;
@@ -71,4 +72,44 @@ header {
 	max-width: 190px;
 	height: 36px;
 	padding: 9px 30px 9px 20px;
+}
+/*intro*/
+.intro {
+	background: url('img/intro_bg.jpg') #4F4F4F center top / cover no-repeat;
+	height: 85vh;
+}
+.intro__inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.intro__more {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate3d(0, -50%, 0);
+	width: 50%;
+	text-transform: uppercase;
+	padding-left: 60px;
+	padding-top: 46px;
+	padding-bottom: 22px;
+	background: rgba(244,121,34,.4);
+}
+.intro__more h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	color: #fff;
+}
+.intro__more a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: .875em;
+	background: rgba(244,121,34,.4);
+	border: 1px solid rgba(255,255,255,.4);
+	padding: 10px 47px 10px 27px;
+}
+.intro__more a:hover {
+	background: rgba(244,121,34,.6);
 }
