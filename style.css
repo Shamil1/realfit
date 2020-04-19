@@ -113,3 +113,59 @@ header {
 .intro__more a:hover {
 	background: rgba(244,121,34,.6);
 }
+/*technologies*/
+.technologies {
+	padding: 45px 0;
+}
+.technologies__content h2 {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 2.5em;
+	color: #504C4C;
+}
+.technologies__items {
+	display: flex;
+	margin: 45px 0;
+}
+.technologies__item {
+	position: relative;
+	width: 33.33333%;
+	background: #F47922;
+	margin-right: 4px;
+}
+.technologies__item:hover img,
+.technologies__item--active img {
+	opacity: .5;
+}
+.technologies__item:hover .technologies__descr,
+.technologies__descr--active {
+	color: #fff !important;
+}
+.technologies__item:last-child {
+	margin-right: 0;
+}
+.technologies__item img {
+	display: block;
+	width: 100%;
+	transition: opacity .2s linear;
+}
+.technologies__descr {
+	position: absolute;
+	bottom: 10px;
+	right: 40px;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: transparent;
+	transition: color .2s linear;
+}
+.technologies__text {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1400px;
+	color: #504C4C;
+	font-size: .93em;
+	font-family: 'Poppins', sans-serif;
+}
