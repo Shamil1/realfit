@@ -6,8 +6,69 @@
 }
 a {
 	text-decoration: none;
+	color: #fff;
 }
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #504C4C;
+	font-size: .93em;
+}
+.container {
+	width: 100%;
+	max-width: 1640px;
+	margin: 0 auto;
+}
+/*header*/
+header {
+	background: url('img/header_bg.png') right center / contain #303030 no-repeat;
+	border-bottom: 1px solid #707070;
+}
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__nav {
+	margin-bottom: -60px;
+}
+.header__nav a {
+	font-family: 'Arial', sans-serif;
+	font-size: 1.25em;
+	margin-right: 46px;
+	padding: 3px;
+}
+.active,
+.header__nav a:hover {
+	border-bottom: 1px solid #F47922;
+}
+.header__nav a:last-child {
+	margin-right: 0;
+}
+.header__contacts {
+	display: flex;
+	align-items: center;
+	font-family: 'Tahoma', sans-serif;
+	margin-top: -40px;
+	position: relative;
+}
+.header__contacts::before {
+	position: absolute;
+	content: '';
+	border: 34px solid transparent;
+	border-bottom: 36px solid #fff;
+	bottom: 0;
+	left: -35px;
+}
+.header__email {
+	background: #fff;
+	color: #000;
+	max-width: 198px;
+	height: 36px;
+	padding: 9px 50px 9px 70px;
+}
+.header__tel {
+	background: #F47922;
+	max-width: 190px;
+	height: 36px;
+	padding: 9px 30px 9px 20px;
 }
