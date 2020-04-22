@@ -7,6 +7,9 @@ a {
 	text-decoration: none;
 	color: #fff;
 }
+ul {
+	list-style: none;
+}
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #504C4C;
@@ -189,7 +192,7 @@ header {
 }
 /*ourwork*/
 .ourwork {
-	padding: 50px 0;
+	padding: 60px 0;
 	background: #E8EDF1;
 }
 .ourwork__header {
@@ -213,6 +216,7 @@ header {
 	max-width: 1160px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 auto;
 	margin-top: 50px;
 }
@@ -224,7 +228,7 @@ header {
 	border-top: 3px solid #5b5d5f;
 	border-left: 3px solid #5b5d5f;
 	top: 50%;
-	transform: rotateZ(-45deg);
+	transform: translateY(-50%) rotateZ(-45deg);
 	left: -30px;
 	cursor: pointer;
 }
@@ -236,9 +240,23 @@ header {
 	border-top: 3px solid #5b5d5f;
 	border-left: 3px solid #5b5d5f;
 	top: 50%;
-	transform: rotateZ(135deg);
+	transform: translateY(-50%) rotateZ(135deg);
 	right: -30px;
 	cursor: pointer;
+}
+.slider--small {
+	margin-top: 0;
+}
+.slider--small::before {
+	width: 15px;
+	height: 15px;
+}
+.slider--small::after {
+	width: 15px;
+	height: 15px;
+}
+.slider--small .slider__item {
+	margin-right: 20px;
 }
 .slider__item {
 	text-align: center;
@@ -276,3 +294,60 @@ header {
 	background: #f67c25;
 	color: #fff;
 }
+/*advantages*/
+.advantages {
+	display: flex;
+}
+.advantages__left {
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+	background: #f67c25;
+	padding: 50px 60px;
+	color: #fff;
+}
+.advantages__right {
+	width: 50%;
+	background: #737373;
+	padding: 50px 30px 50px;
+}
+.advantages__item {
+	font-family: 'Poppins', sans-serif;
+}
+.advantages__header {
+	font-weight: 700;
+	font-size: 1.875em;
+	margin-bottom: 15px;
+	color: #fff;
+}
+.advantages__list {
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.8;
+}
+.advantages__list li::before {
+	content: url(img/advant-icon.png);
+	padding-right: 10px;
+}
+.advantages__videoandphoto {
+	display: flex;
+	height: 164px;
+	margin-top: 40px;
+}
+.advantages__video {
+	margin-right: 15px;
+	width: 360px;
+	overflow: hidden;
+}
+.advantages__photo {
+	width: 490px;
+	overflow: hidden;
+}
+.advantages__img {
+	display: block;
+	width: 100%;
+}
+/*sponsors*/
+/*.sponsors {
+	padding: 50px 0;
+}*/
