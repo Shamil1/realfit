@@ -8,26 +8,29 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
+	<header class="header">
 		<div class="container">
 			<div class="header__inner">
 				<div class="logo">
 					<a href="#">
-						<img src="img/logo.png" alt="logo">
+						<img class="logo__img" src="img/logo.png" alt="logo">
 					</a>
 				</div>
-				<nav class="header__nav">
-					<a href="#" class="active">Haqqında</a>
-					<a href="#">Məhsullar</a>
-					<a href="#">Xidmətlər</a>
-					<a href="#">Gördüyümüz layihələr</a>
-					<a href="#">Partnyorlar</a>
-					<a href="#">Bizimlə əlaqə</a>
+				<nav class="header__nav" id="header__nav">
+					<a class="header__links active" href="#">Haqqında</a>
+					<a class="header__links" href="#">Məhsullar</a>
+					<a class="header__links" href="#">Xidmətlər</a>
+					<a class="header__links" href="#">Gördüyümüz layihələr</a>
+					<a class="header__links" href="#">Partnyorlar</a>
+					<a class="header__links" href="#">Bizimlə əlaqə</a>
 				</nav>
 				<div class="header__contacts">
 					<a class="header__email" href="mailto:info@reallift.az">info@reallift.az</a>
 					<a class="header__tel" href="tel:+994552299997">T:+99455 2299997</a>
 				</div>
+				<button class="burger" id="burger">
+					<span class="burger__line">Menu</span>
+				</button>
 			</div><!-- /header__inner -->
 		</div> <!-- /container -->
 	</header>
@@ -196,5 +199,7 @@
 			</div><!-- /.footer__inner -->
 		</div><!-- /.container -->
 	</footer><!-- /.footer -->
+
+	<script src="main.js"></script>
 </body>
 </html>
